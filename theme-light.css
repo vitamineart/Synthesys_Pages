@@ -1,3 +1,117 @@
-body {
-    background-color: red !important;
+body.theme-light {
+  filter: invert(1) hue-rotate(180deg);
+  --white-inverted: #000;
+  --gray-inverted: #0a0a0a;
 }
+
+body.theme-light img {
+  filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body.theme-light .m-body,
+body.theme-light .synonames {
+  background: var(--gray-inverted);
+}
+
+body.theme-light .m-header {
+  box-shadow: 0px 1px 10px hsl(255deg 50% 80% / 17%);
+}
+
+body.theme-light .m-header .m-header-head {
+  box-shadow: none !important;
+}
+
+body.theme-light .m-header-menu .m-menu__nav>.m-menu__item:first-child {
+  filter: saturate(2) brightness(0.7);
+}
+
+body.theme-light .head-upgrade {
+  filter: invert(1) hue-rotate(180deg) contrast(1.1);
+}
+
+body.theme-light .slider .item.checked .photo-profile {
+  border-color: hsl(200, 100%, 38%);
+}
+
+body.theme-light .slider .item {
+  background-color: var(--white-inverted);
+  box-shadow: 0 2px 10px hsla(0, 0%, 15%, .8);
+}
+
+body.theme-light .message .message-block .input-field textarea,
+body.theme-light .message .message-block .input-field:after {
+  background-color: var(--white-inverted);
+}
+
+body.theme-light .message .message-block .input-field textarea {
+  box-shadow: 0px 2px 4px hsla(0, 0%, 100%, .1);
+}
+
+body.theme-light .create-message .create {
+  filter: saturate(2) brightness(0.8);
+}
+
+body.theme-light .your-voice-clips {
+  background: var(--white-inverted);
+}
+
+body.theme-light .your-voice-clips p span {
+  background: var(--gray-inverted);
+}
+
+body.theme-light .your-voice-clips .voice {
+  background: var(--gray-inverted);
+}
+
+body.theme-light .pagination-container li {
+  background-color: var(--gray-inverted);
+}
+
+body.theme-light .pagination-container li a {
+  color: #005494;
+}
+
+/* editor end */
+
+/* addsynonames start */
+body.theme-light .m-header-menu .m-menu__nav>.m-menu__item:first-child {
+  filter: saturate(2) brightness(0.7);
+}
+
+body.theme-light .head-upgrade,
+body.theme-light #gdpr-cookie-message button,
+#gdpr-cookie-message-2 button,
+.gdpr-cookie-message button,
+body.theme-light .synonames .form-block button,
+body.theme-light .synonames header h4 {
+  filter: invert(1) hue-rotate(180deg) contrast(1.1);
+}
+
+body.theme-light .synonames .form-block button {
+  color: #42ABE1;
+}
+
+body.theme-light #gdpr-cookie-message {
+  box-shadow: 0 2px 10px rgb(68 68 68 / 54%), 0 12px 70px rgb(68 68 68 / 90%);
+  background-color: #000;
+}
+
+/* addsynonames end */
+
+/* login start */
+body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form {
+  filter: saturate(.6);
+}
+
+body.theme-light .m-login.m-login--2 .m-login__wrapper .m-login__container .m-login__form .m-form__group .form-control {
+  background: hsl(255deg 66% 39% / 20%);
+}
+
+body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-action .m-login__btn.m-login__btn--primary {
+  color: black;
+  border-color: transparent;
+  background-color: #776cf7;
+}
+
+/* login end */
