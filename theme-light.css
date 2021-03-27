@@ -6,7 +6,6 @@ body.theme-light {
 
 body.theme-light img {
   filter: invert(1) hue-rotate(180deg);
-  filter: invert(1) hue-rotate(180deg);
 }
 
 body.theme-light .m-body,
@@ -15,7 +14,7 @@ body.theme-light .synonames {
   background: var(--gray-inverted);
 }
 body.theme-light  .m-topbar {
-  background-color: #000;
+  background-color: var(--white-inverted);
   color: #fff;
 }
 
@@ -99,7 +98,7 @@ body.theme-light .synonames .form-block button {
 
 body.theme-light #gdpr-cookie-message {
   box-shadow: 0 2px 10px rgb(68 68 68 / 54%), 0 12px 70px rgb(68 68 68 / 90%);
-  background-color: #000;
+  background-color: var(--white-inverted);
 }
 
 /* addsynonames end */
