@@ -136,7 +136,10 @@ body.theme-light input.ghost {
 /* Video Talents end */
 
 /* Video RecordVoices start */
-body.theme-light .contentpanel {
+body.theme-light .alert-primary:not(.m-alert--outline) {
+  color: var(--white-inverted);
+}
+body.theme-light #app {
   filter: invert(1) hue-rotate(180deg);
 }
 /* Video RecordVoices end */
