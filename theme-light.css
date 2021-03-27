@@ -10,6 +10,7 @@ body.theme-light img {
 }
 
 body.theme-light .m-body,
+body.theme-light .m-wrapper,
 body.theme-light .synonames {
   background: var(--gray-inverted);
 }
