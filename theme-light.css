@@ -5,7 +5,7 @@ body.theme-light {
   --block-shadow: 0 1px 5px #111;;
 }
 
-body.theme-light img {
+body.theme-light :is(img, video) {
   filter: invert(1) hue-rotate(180deg);
 }
 
@@ -232,5 +232,12 @@ body.theme-light :is(.video .video-settings .d-flex .btn-group, #positions .d-fl
 
 body.theme-light :is(.video .video-settings .d-flex .btn-group button.activex, #positions .d-flex .btn-group button.activex) {
   background: var(--white-inverted);
+}
+body.theme-light .video .video-img {
+  background: var(--white-inverted);
+}
+
+body.theme-light .settings__title .tab-content .item > div {
+  filter: invert(1) hue-rotate(180deg);
 }
 /* Synthesis AI Studio end */
