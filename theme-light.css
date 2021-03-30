@@ -50,6 +50,8 @@ body.theme-light .message .message-block .input-field:after {
 
 body.theme-light .message .message-block .input-field textarea {
   box-shadow: 0px 2px 4px hsla(0, 0%, 100%, .1);
+  filter: invert(1);
+  background-color: white;
 }
 
 body.theme-light .create-message .create {
