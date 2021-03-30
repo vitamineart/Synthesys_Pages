@@ -225,4 +225,12 @@ body.theme-light .add-new-slide .item {
 body.theme-light :is(.video-script, .add-new-slide) {
   box-shadow: var(--block-shadow);
 }
+
+body.theme-light :is(.video .video-settings .d-flex .btn-group, #positions .d-flex .btn-group) {
+  background: #101010;
+}
+
+body.theme-light :is(.video .video-settings .d-flex .btn-group button.activex, #positions .d-flex .btn-group button.activex) {
+  background: var(--white-inverted);
+}
 /* Synthesis AI Studio end */
