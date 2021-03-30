@@ -2,6 +2,7 @@ body.theme-light {
   filter: invert(1) hue-rotate(180deg);
   --white-inverted: #000;
   --gray-inverted: #0a0a0a;
+  --block-shadow: 0 1px 5px #111;;
 }
 
 body.theme-light img {
@@ -131,7 +132,9 @@ body.theme-light .avatars-body .item .item-header {
 }
 body.theme-light button.ghost,
 body.theme-light a.ghost,
-body.theme-light input.ghost {
+body.theme-light input.ghost,
+button.primary,
+input.ghost.primary {
   filter: saturate(1.2);
 }
 /* Video Talents end */
@@ -144,3 +147,82 @@ body.theme-light #app {
   filter: invert(1) hue-rotate(180deg);
 }
 /* Video RecordVoices end */
+
+/* Synthesis AI Studio start */
+body.theme-light .create-choose .item {
+  background: var(--white-inverted);
+  box-shadow: 0 2px 10px hsla(0, 0%, 15%, .8);
+}
+
+body.theme-light .create-choose .item .item-header {
+  background: #111;
+}
+
+body.theme-light :is(.video-script, .choose-script-lang-btn, .choose-script-lang-btn svg circle) {
+  background: var(--white-inverted);
+  fill: var(--white-inverted);
+
+}
+
+body.theme-light .video-script:before {
+  border-color: var(--white-inverted);
+
+}
+
+body.theme-light .video-script textarea {
+  background: #000 !important;
+  border: 1px solid #191919 !important;
+}
+
+body.theme-light button.ghost,
+body.theme-light a.ghost,
+body.theme-light input.ghost,
+body.theme-light button.primary,
+body.theme-light input.ghost.primary {
+  filter: saturate(1.2);
+}
+
+body.theme-light .create-settings button.primary {
+  color: var(--white-inverted);
+}
+
+body.theme-light .settings__title .soundtrak-type .item {
+  filter: saturate(1.2);
+  color: var(--white-inverted);
+}
+
+body.theme-light .settings__title .soundtrak-type .item:not(.add-sound).active {
+  filter: saturate(1.2);
+}
+
+body.theme-light .settings__title .soundtrak-type .item,
+body.theme-light .settings__title .tab-content .item {
+  background: var(--white-inverted);
+  box-shadow: var(--block-shadow);
+}
+
+body.theme-light .settings__title .soundtrak-type .item:hover {
+  box-shadow: 0 2px 5px hsla(0, 0%, 15%, .0);
+}
+
+body.theme-light .settings__title .soundtrak-type .item:not(.add-sound).active p {
+  color: var(--white-inverted);
+}
+
+body.theme-light .settings__title .soundtrak-type .item:not(.add-sound).active svg path {
+  fill: var(--white-inverted);
+}
+
+body.theme-light .settings__title .soundtrak-type .item:not(.add-sound).active svg circle {
+  stroke: var(--white-inverted);
+}
+
+body.theme-light .add-new-slide .item {
+  background: var(--white-inverted);
+  box-shadow: var(--block-shadow);
+}
+
+body.theme-light :is(.video-script, .add-new-slide) {
+  box-shadow: var(--block-shadow);
+}
+/* Synthesis AI Studio end */
