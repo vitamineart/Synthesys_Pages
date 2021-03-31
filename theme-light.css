@@ -111,7 +111,7 @@ body.theme-light #gdpr-cookie-message h4 {
 body.theme-light .m-login.m-login--2 .m-login__wrapper .m-login__container .m-login__form .m-form__group .form-control {
   background: hsl(255deg 100% 90% / 40%);
   filter: invert(1);
-  color: #fff;
+  color: hsl(255deg 100% 30%);
 }
 
 body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-action .m-login__btn.m-login__btn--primary {
@@ -171,14 +171,14 @@ body.theme-light .create-choose {
  color: #000;
 }
 body.theme-light .create-choose .item {
-  /* filter: invert(0); */
   background-color: #fff;
   box-shadow: 0px 3px 10px hsl(0deg 0% 0% / 10%);
 }
 
 body.theme-light .create-choose .item .item-header {
-  background: #e6e6e6;
+  background: #1b1b1b;
   border-bottom-color: transparent;
+  filter: invert(1);
 }
 
 body.theme-light :is(.video-script, .choose-script-lang-btn, .choose-script-lang-btn svg circle) {
@@ -216,6 +216,9 @@ body.theme-light .settings__title .tab-content .item {
   filter: invert(1);
   background-color: #fff;
   color: #000;
+}
+body.theme-light .settings__title .tab-content .item :is(img, video) {
+  filter: invert(0);
 }
 body.theme-light .settings__title .soundtrak-type .item:not(.add-sound).active p {
   color: #fff;
@@ -293,4 +296,14 @@ body.theme-light .video .video-img {
   background: var(--white-inverted);
 }
 
+
+body.theme-light .video .sc-AxjAm.bcMPWx .progress {
+  filter: invert(1);
+  background: #fff;
+}
+
+body.theme-light .video .sc-AxjAm.bcMPWx .play-pause-btn-recorder {
+  filter: invert(1);
+  background: #fff;
+}
 /* Synthesis AI Studio end */
