@@ -1,12 +1,14 @@
 body.theme-light {
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(1);
   --white-inverted: #000;
   --gray-inverted: #0a0a0a;
-  --block-shadow: 0 1px 5px #111;;
+  --block-shadow: 0 1px 5px #111;
+  --blue: hsl(196, 74%, 50%);
+  --blue-inverted: hsl(16, 74%, 50%);
 }
 
 body.theme-light :is(img, video) {
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(1);
 }
 
 body.theme-light .m-body,
@@ -28,15 +30,11 @@ body.theme-light .m-header .m-header-head {
 }
 
 body.theme-light .m-header-menu .m-menu__nav>.m-menu__item:first-child {
-  filter: saturate(2) brightness(0.7);
-}
-
-body.theme-light .head-upgrade {
-  filter: invert(1) hue-rotate(180deg) contrast(1.1);
+  filter: invert(1);
 }
 
 body.theme-light .slider .item.checked .photo-profile {
-  border-color: hsl(200, 100%, 38%);
+  border-color: var(--blue-inverted);
 }
 
 body.theme-light .slider .item {
@@ -56,8 +54,13 @@ body.theme-light .message .message-block .input-field textarea {
 }
 
 body.theme-light .create-message .create {
-  filter: saturate(2) brightness(0.8);
+  filter: invert(1);
+  color: #000;
 }
+
+body.theme-light input.btn-volume {
+  filter: invert(1);
+}`
 
 body.theme-light .your-voice-clips {
   background: var(--white-inverted);
@@ -76,23 +79,19 @@ body.theme-light .pagination-container li {
 }
 
 body.theme-light .pagination-container li a {
-  color: #005494;
+  filter: invert(1);
 }
 
 /* editor end */
 
 /* addsynonames start */
-body.theme-light .m-header-menu .m-menu__nav>.m-menu__item:first-child {
-  filter: saturate(2) brightness(0.7);
-}
-
 body.theme-light .head-upgrade,
 body.theme-light #gdpr-cookie-message button,
 #gdpr-cookie-message-2 button,
 .gdpr-cookie-message button,
 body.theme-light .synonames .form-block button,
 body.theme-light .synonames header h4 {
-  filter: invert(1) hue-rotate(180deg) contrast(1.1);
+  filter: invert(1);
 }
 
 body.theme-light .synonames .form-block button {
@@ -103,65 +102,88 @@ body.theme-light #gdpr-cookie-message {
   box-shadow: 0 2px 10px rgb(68 68 68 / 54%), 0 12px 70px rgb(68 68 68 / 90%);
   background-color: var(--white-inverted);
 }
-
+body.theme-light #gdpr-cookie-message h4 {
+  filter: invert(1);
+}
 /* addsynonames end */
 
 /* login start */
-body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form {
-  filter: saturate(.6);
-}
-
 body.theme-light .m-login.m-login--2 .m-login__wrapper .m-login__container .m-login__form .m-form__group .form-control {
-  background: hsl(255deg 66% 39% / 20%);
+  background: hsl(255deg 100% 90% / 40%);
+  filter: invert(1);
+  color: #fff;
 }
 
 body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-action .m-login__btn.m-login__btn--primary {
-  color: black;
+  color: #fff;
   border-color: transparent;
   background-color: #776cf7;
+  filter: invert(1);
 }
 
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox,
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link {
+  filter: invert(1);
+}
 /* login end */
+
 /* Video Talents start */
+body.theme-light section.avatars-body {
+  filter: invert(1);
+}
+
 body.theme-light .avatars-body .item {
-  background: var(--white-inverted);
-  box-shadow: 0px 2px 10px hsl(0deg 0% 100% / 13%);
+  box-shadow: 0 3px 10px #d4d4d4;
+  background: #fff;
+  color: #000;
 }
 body.theme-light .avatars-body .item .item-header {
-  background-color: #1f1f1f;
+  filter: invert(1);
+  background: #292929;
 }
-body.theme-light button.ghost,
-body.theme-light a.ghost,
-body.theme-light input.ghost,
-button.primary,
-input.ghost.primary {
-  filter: saturate(1.2);
+
+body.theme-light .avatars-body .item:hover .item-header {
+  background: hsl(16deg 34% 30% / 20%);
+}
+
+body.theme-light .avatars-body a.btn.ghost {
+  filter: invert(0);
+  color: #8b8f92;
 }
 /* Video Talents end */
 
 /* Video RecordVoices start */
 body.theme-light .alert-primary:not(.m-alert--outline) {
-  color: var(--white-inverted);
+  filter: invert(1);
 }
 body.theme-light #app {
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(1);
+}
+body.theme-light #app input.btn-volume {
+  filter: invert(0);
 }
 /* Video RecordVoices end */
 
 /* Synthesis AI Studio start */
+body.theme-light .create-choose {
+ filter: invert(1);
+ background-color: hsl(0, 0%, 96%);
+ color: #000;
+}
 body.theme-light .create-choose .item {
-  background: var(--white-inverted);
-  box-shadow: 0 2px 10px hsla(0, 0%, 15%, .8);
+  /* filter: invert(0); */
+  background-color: #fff;
+  box-shadow: 0px 3px 10px hsl(0deg 0% 0% / 10%);
 }
 
 body.theme-light .create-choose .item .item-header {
-  background: #111;
+  background: #e6e6e6;
+  border-bottom-color: transparent;
 }
 
 body.theme-light :is(.video-script, .choose-script-lang-btn, .choose-script-lang-btn svg circle) {
   background: var(--white-inverted);
   fill: var(--white-inverted);
-
 }
 
 body.theme-light .video-script:before {
@@ -172,59 +194,93 @@ body.theme-light .video-script:before {
 body.theme-light .video-script textarea {
   background: #000 !important;
   border: 1px solid #191919 !important;
+  outline: 0;
 }
-
+body.theme-light .video-script textarea:focus {
+  border-color: var(--blue);
+}
 body.theme-light button.ghost,
 body.theme-light a.ghost,
 body.theme-light input.ghost,
 body.theme-light button.primary,
 body.theme-light input.ghost.primary {
-  filter: saturate(1.2);
-}
-
-body.theme-light .create-settings button.primary {
-  color: var(--white-inverted);
+  filter: invert(1);
 }
 
 body.theme-light .settings__title .soundtrak-type .item {
-  filter: saturate(1.2);
   color: var(--white-inverted);
-}
-
-body.theme-light .settings__title .soundtrak-type .item:not(.add-sound).active {
-  filter: saturate(1.2);
 }
 
 body.theme-light .settings__title .soundtrak-type .item,
 body.theme-light .settings__title .tab-content .item {
-  background: var(--white-inverted);
-  box-shadow: var(--block-shadow);
+  filter: invert(1);
+  background-color: #fff;
+  color: #000;
 }
-
-body.theme-light .settings__title .soundtrak-type .item:hover {
-  box-shadow: 0 2px 5px hsla(0, 0%, 15%, .0);
-}
-
 body.theme-light .settings__title .soundtrak-type .item:not(.add-sound).active p {
-  color: var(--white-inverted);
+  color: #fff;
+}
+body.theme-light .settings__title .soundtrak-type .item figure {
+  filter: invert(1);
+}
+body.theme-light .settings__title .soundtrak-type .item figure svg {
+  filter: invert(1);
+}
+body.theme-light .settings__title .soundtrak-type .item:not(.add-sound):hover {
+  background: hsla(201, 67%, 24%, .3);
 }
 
-body.theme-light .settings__title .soundtrak-type .item:not(.add-sound).active svg path {
-  fill: var(--white-inverted);
+body.theme-light .settings__title .soundtrak-type .item p,
+body.theme-light .settings__title .tab-content .item p {
+  color: #000;
 }
 
-body.theme-light .settings__title .soundtrak-type .item:not(.add-sound).active svg circle {
-  stroke: var(--white-inverted);
+body.theme-light .settings__title .nav.nav-tabs .nav-item .nav-link.active {
+  filter: invert(1);
+  color: #6f727d !important;
 }
+body.theme-light .settings__title .soundtrak label {
+  filter: invert(1);
+  color: #000;
+}
+body.theme-light .settings__title .soundtrak label span {
+  border-color: var(--blue);
+}
+
+
+
+
+
 
 body.theme-light .add-new-slide .item {
   background: var(--white-inverted);
   box-shadow: var(--block-shadow);
 }
-
-body.theme-light :is(.video-script, .add-new-slide) {
-  box-shadow: var(--block-shadow);
+body.theme-light .add-new-slide .item svg {
+  filter: invert(1);
 }
+body.theme-light .add-new-slide .item svg [stroke]{
+  filter: invert(1);
+}
+body.theme-light .add-new-slide .item.active {
+  border-color: var(--blue-inverted);
+}
+
+body.theme-light .btn.ghost.play-script {
+  color: #000;
+}
+body.theme-light .video-script .video-script__title {
+  filter: invert(1);
+  color: #000;
+}
+body.theme-light .video-script .video-script__footer a {
+  filter: invert(1);
+}
+
+body.theme-light .add-new-slide .item:hover {
+  border-color: var(--blue-inverted);
+}
+
 
 body.theme-light :is(.video .video-settings .d-flex .btn-group, #positions .d-flex .btn-group) {
   background: #101010;
@@ -237,7 +293,4 @@ body.theme-light .video .video-img {
   background: var(--white-inverted);
 }
 
-body.theme-light .settings__title .tab-content .item > div {
-  filter: invert(1) hue-rotate(180deg);
-}
 /* Synthesis AI Studio end */
