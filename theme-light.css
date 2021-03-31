@@ -16,6 +16,9 @@ body.theme-light .m-wrapper,
 body.theme-light .synonames {
   background: var(--gray-inverted);
 }
+body.theme-light .your-voice-clips {
+  background: inherit;
+}
 body.theme-light  .m-topbar {
   background-color: var(--white-inverted);
   color: #fff;
@@ -81,7 +84,9 @@ body.theme-light .pagination-container li {
 body.theme-light .pagination-container li a {
   filter: invert(1);
 }
-
+body.theme-light .swiper-scrollbar {
+  filter: invert(1);
+}
 /* editor end */
 
 /* addsynonames start */
@@ -335,3 +340,67 @@ body.theme-light .m-scroll-top>i {
   color: #000000;
 }
 /* Scroll to Top end */
+
+/* Modal Styles start */
+body.theme-light :is(.actor-preview-popup.modal .modal-dialog, .script-lang-popup.modal .modal-dialog) {
+  box-shadow: 0 2px 10px black;
+  background: #000000;
+  box-shadow: var(--block-shadow);
+  box-shadow: 0 2px 10px #222;
+}
+
+body.theme-light :is(.actor-preview-popup.modal .modal-dialog, .script-lang-popup.modal .modal-dialog) .modal-content {
+  background: inherit;
+}
+
+body.theme-light .modal-dialog .mCSB_draggerContainer {
+  filter: invert(1);
+}
+
+body.theme-light .modal-dialog .lang-list .lang-list__item {
+  background: #000;
+  box-shadow: 0 2px 2px hsla(0deg 0% 50% / 0.1);
+}
+
+body.theme-light .modal-dialog .lang-list .sampleAudioPlay {
+  filter: invert(1);
+  background: white;
+}
+
+body.theme-light .modal-dialog .actor-preview-popup .modal-footer .btn {
+  border-color: #ff8800;
+  filter: inherit;
+}
+/* Modal Styles end */
+
+/* VideoTalent Videos start */
+body.theme-light .download .download-body table {
+  filter: invert(1);
+  box-shadow: 0 2px 5px #cacaca;
+}
+
+body.theme-light .download .download-body table td {
+  background: #fff;
+  color: #000;
+}
+
+body.theme-light .download .download-body table td p {
+  color: #000
+}
+
+body.theme-light .download .download-body table .checkmark {
+  border-color: #dadada;
+}
+
+body.theme-light .download .download-body table .checkmark:hover {
+  border-color: #36a3f7;
+}
+
+body.theme-light .download .download-body table .check input:checked~.checkmark {
+  border-color: #36a3f7;
+}
+
+body.theme-light .download .download-body table tbody tr {
+  border-color: #dddfe0;
+}
+/* VideoTalent Videos end */
