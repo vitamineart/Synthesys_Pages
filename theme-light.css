@@ -121,8 +121,8 @@ body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-lo
   filter: invert(1);
 }
 
-.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox,
-.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link {
+body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox,
+body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link {
   filter: invert(1);
 }
 /* login end */
@@ -143,7 +143,7 @@ body.theme-light .avatars-body .item .item-header {
 }
 
 body.theme-light .avatars-body .item:hover .item-header {
-  background: hsl(16deg 34% 30% / 20%);
+  background: hsl(16deg 34% 30% / 20%) ;
 }
 
 body.theme-light .avatars-body a.btn.ghost {
