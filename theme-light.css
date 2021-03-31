@@ -121,9 +121,18 @@ body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-lo
   filter: invert(1);
 }
 
-body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox,
-body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link {
+body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox, body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link {
   filter: invert(1);
+  color: #7d709a;
+}
+body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link:hover {
+  color: #4a3956;
+}
+body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox.m-checkbox--light>span {
+  border-color: #9895bd;
+}
+body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox.m-checkbox--light>span:after {
+  border-color: #9895bd;
 }
 /* login end */
 
@@ -148,7 +157,9 @@ body.theme-light .avatars-body .item:hover .item-header {
 
 body.theme-light .avatars-body a.btn.ghost {
   filter: invert(0);
-  color: #8b8f92;
+}
+body.theme-light .avatars-body .item .d-flex a {
+  color: #666;
 }
 /* Video Talents end */
 
@@ -179,6 +190,9 @@ body.theme-light .create-choose .item .item-header {
   background: #1b1b1b;
   border-bottom-color: transparent;
   filter: invert(1);
+}
+body.theme-light .create-choose .item:hover .item-header {
+  background: hsl(16deg 34% 30% / 20%);
 }
 
 body.theme-light :is(.video-script, .choose-script-lang-btn, .choose-script-lang-btn svg circle) {
@@ -293,7 +307,11 @@ body.theme-light :is(.video .video-settings .d-flex .btn-group button.activex, #
   background: var(--white-inverted);
 }
 body.theme-light .video .video-img {
-  background: var(--white-inverted);
+  filter: invert(1);
+}
+
+body.theme-light .video .video-img :is(img, video) {
+  filter: invert(0);
 }
 
 
@@ -307,3 +325,13 @@ body.theme-light .video .sc-AxjAm.bcMPWx .play-pause-btn-recorder {
   background: #fff;
 }
 /* Synthesis AI Studio end */
+
+/* Scroll to Top start */
+body.theme-light .m-scroll-top.m-scroll-top--skin-top {
+  background: #808080;
+}
+
+body.theme-light .m-scroll-top>i {
+  color: #000000;
+}
+/* Scroll to Top end */
