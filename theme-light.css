@@ -16,10 +16,12 @@ body.theme-light .m-wrapper,
 body.theme-light .synonames {
   background: var(--gray-inverted);
 }
+
 body.theme-light .your-voice-clips {
   background: inherit;
 }
-body.theme-light  .m-topbar {
+
+body.theme-light .m-topbar {
   background-color: var(--white-inverted);
   color: #fff;
 }
@@ -32,7 +34,7 @@ body.theme-light .m-header .m-header-head {
   box-shadow: none !important;
 }
 
-body.theme-light .m-header-menu .m-menu__nav>.m-menu__item:first-child {
+body.theme-light .m-header-menu .m-menu__nav>.m-menu__item:first-child:not(.dropdown) {
   filter: invert(1);
 }
 
@@ -63,9 +65,9 @@ body.theme-light .create-message .create {
 
 body.theme-light input.btn-volume {
   filter: invert(1);
-}`
+}
 
-body.theme-light .your-voice-clips {
+` body.theme-light .your-voice-clips {
   background: var(--white-inverted);
 }
 
@@ -84,9 +86,11 @@ body.theme-light .pagination-container li {
 body.theme-light .pagination-container li a {
   filter: invert(1);
 }
+
 body.theme-light .swiper-scrollbar {
   filter: invert(1);
 }
+
 /* editor end */
 
 /* addsynonames start */
@@ -95,7 +99,9 @@ body.theme-light #gdpr-cookie-message button,
 #gdpr-cookie-message-2 button,
 .gdpr-cookie-message button,
 body.theme-light .synonames .form-block button,
-body.theme-light .synonames header h4 {
+body.theme-light .synonames header h4,
+body.theme-light .invert_this,
+body.theme-light .btn-info {
   filter: invert(1);
 }
 
@@ -107,9 +113,11 @@ body.theme-light #gdpr-cookie-message {
   box-shadow: 0 2px 10px rgb(68 68 68 / 54%), 0 12px 70px rgb(68 68 68 / 90%);
   background-color: var(--white-inverted);
 }
+
 body.theme-light #gdpr-cookie-message h4 {
   filter: invert(1);
 }
+
 /* addsynonames end */
 
 /* login start */
@@ -126,19 +134,24 @@ body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-lo
   filter: invert(1);
 }
 
-body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox, body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link {
+body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox,
+body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link {
   filter: invert(1);
   color: #7d709a;
 }
+
 body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link:hover {
   color: #4a3956;
 }
+
 body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox.m-checkbox--light>span {
   border-color: #9895bd;
 }
+
 body.theme-light .m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox.m-checkbox--light>span:after {
   border-color: #9895bd;
 }
+
 /* login end */
 
 /* Video Talents start */
@@ -151,41 +164,48 @@ body.theme-light .avatars-body .item {
   background: #fff;
   color: #000;
 }
+
 body.theme-light .avatars-body .item .item-header {
   filter: invert(1);
   background: #292929;
 }
 
 body.theme-light .avatars-body .item:hover .item-header {
-  background: hsl(16deg 34% 30% / 20%) ;
+  background: hsl(16deg 34% 30% / 20%);
 }
 
 body.theme-light .avatars-body a.btn.ghost {
   filter: invert(0);
 }
+
 body.theme-light .avatars-body .item .d-flex a {
   color: #666;
 }
+
 /* Video Talents end */
 
 /* Video RecordVoices start */
 body.theme-light .alert-primary:not(.m-alert--outline) {
   filter: invert(1);
 }
+
 body.theme-light #app {
   filter: invert(1);
 }
+
 body.theme-light #app input.btn-volume {
   filter: invert(0);
 }
+
 /* Video RecordVoices end */
 
 /* Synthesis AI Studio start */
 body.theme-light .create-choose {
- filter: invert(1);
- background-color: hsl(0, 0%, 96%);
- color: #000;
+  filter: invert(1);
+  background-color: hsl(0, 0%, 96%);
+  color: #000;
 }
+
 body.theme-light .create-choose .item {
   background-color: #fff;
   box-shadow: 0px 3px 10px hsl(0deg 0% 0% / 10%);
@@ -196,6 +216,7 @@ body.theme-light .create-choose .item .item-header {
   border-bottom-color: transparent;
   filter: invert(1);
 }
+
 body.theme-light .create-choose .item:hover .item-header {
   background: hsl(16deg 34% 30% / 20%);
 }
@@ -207,7 +228,6 @@ body.theme-light :is(.video-script, .choose-script-lang-btn, .choose-script-lang
 
 body.theme-light .video-script:before {
   border-color: var(--white-inverted);
-
 }
 
 body.theme-light .video-script textarea {
@@ -215,9 +235,11 @@ body.theme-light .video-script textarea {
   border: 1px solid #191919 !important;
   outline: 0;
 }
+
 body.theme-light .video-script textarea:focus {
   border-color: var(--blue);
 }
+
 body.theme-light button.ghost,
 body.theme-light a.ghost,
 body.theme-light input.ghost,
@@ -236,18 +258,23 @@ body.theme-light .settings__title .tab-content .item {
   background-color: #fff;
   color: #000;
 }
+
 body.theme-light .settings__title .tab-content .item :is(img, video) {
   filter: invert(0);
 }
+
 body.theme-light .settings__title .soundtrak-type .item:not(.add-sound).active p {
   color: #fff;
 }
+
 body.theme-light .settings__title .soundtrak-type .item figure {
   filter: invert(1);
 }
+
 body.theme-light .settings__title .soundtrak-type .item figure svg {
   filter: invert(1);
 }
+
 body.theme-light .settings__title .soundtrak-type .item:not(.add-sound):hover {
   background: hsla(201, 67%, 24%, .3);
 }
@@ -261,10 +288,12 @@ body.theme-light .settings__title .nav.nav-tabs .nav-item .nav-link.active {
   filter: invert(1);
   color: #6f727d !important;
 }
+
 body.theme-light .settings__title .soundtrak label {
   filter: invert(1);
   color: #000;
 }
+
 body.theme-light .settings__title .soundtrak label span {
   border-color: var(--blue);
 }
@@ -278,12 +307,15 @@ body.theme-light .add-new-slide .item {
   background: var(--white-inverted);
   box-shadow: var(--block-shadow);
 }
+
 body.theme-light .add-new-slide .item svg {
   filter: invert(1);
 }
-body.theme-light .add-new-slide .item svg [stroke]{
+
+body.theme-light .add-new-slide .item svg [stroke] {
   filter: invert(1);
 }
+
 body.theme-light .add-new-slide .item.active {
   border-color: var(--blue-inverted);
 }
@@ -291,10 +323,12 @@ body.theme-light .add-new-slide .item.active {
 body.theme-light .btn.ghost.play-script {
   color: #000;
 }
+
 body.theme-light .video-script .video-script__title {
   filter: invert(1);
   color: #000;
 }
+
 body.theme-light .video-script .video-script__footer a {
   filter: invert(1);
 }
@@ -311,6 +345,7 @@ body.theme-light :is(.video .video-settings .d-flex .btn-group, #positions .d-fl
 body.theme-light :is(.video .video-settings .d-flex .btn-group button.activex, #positions .d-flex .btn-group button.activex) {
   background: var(--white-inverted);
 }
+
 body.theme-light .video .video-img {
   filter: invert(1);
 }
@@ -329,6 +364,7 @@ body.theme-light .video .sc-AxjAm.bcMPWx .play-pause-btn-recorder {
   filter: invert(1);
   background: #fff;
 }
+
 /* Synthesis AI Studio end */
 
 /* Scroll to Top start */
@@ -339,6 +375,7 @@ body.theme-light .m-scroll-top.m-scroll-top--skin-top {
 body.theme-light .m-scroll-top>i {
   color: #000000;
 }
+
 /* Scroll to Top end */
 
 /* Modal Styles start */
@@ -367,9 +404,19 @@ body.theme-light .modal-dialog .lang-list .sampleAudioPlay {
   background: white;
 }
 
-body.theme-light .modal-dialog .actor-preview-popup .modal-footer .btn {
-  border-color: #ff8800;
+body.theme-light .actor-preview-popup .modal-footer .btn {
   filter: inherit;
+  color: #555;
+  font-weight: 500;
+}
+
+body.theme-light .actor-preview-popup .modal-footer .btn.cancel {
+  border-color: #555;
+}
+
+body.theme-light .actor-preview-popup .modal-footer .btn.ghost:not(.cancel):hover {
+  --color: 200deg 73% 47%;
+  filter: drop-shadow(0px 0px 7px hsla(var(--color) / .5)) invert(1);
 }
 /* Modal Styles end */
 
@@ -403,4 +450,24 @@ body.theme-light .download .download-body table .check input:checked~.checkmark 
 body.theme-light .download .download-body table tbody tr {
   border-color: #dddfe0;
 }
+
 /* VideoTalent Videos end */
+
+/* Menu Dropdown start */
+body.theme-light .dropdown-menu {
+  background: black;
+  box-shadow: 0px 0px 15px 1px rgb(142 141 156 / 20%);
+}
+
+body.theme-light :is(.dropdown-menu > li > a, .dropdown-menu > .dropdown-item) {
+  color: white;
+}
+
+body.theme-light :is(.dropdown-menu > li > a:hover, .dropdown-menu > .dropdown-item:hover) {
+  background: #171717;
+}
+
+body.theme-light .create-choose .item .item-body p:not(.name) {
+  font-weight: 400;
+}
+/* Menu Dropdown end */
