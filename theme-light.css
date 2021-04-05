@@ -1,10 +1,13 @@
 body.theme-light {
-  filter: invert(1);
+
   --white-inverted: #000;
   --gray-inverted: #0a0a0a;
   --block-shadow: 0 1px 5px #111;
   --blue: hsl(196, 74%, 50%);
   --blue-inverted: hsl(16, 74%, 50%);
+}
+body.theme-light > div {
+  filter: invert(1);
 }
 
 body.theme-light :is(img, video) {
