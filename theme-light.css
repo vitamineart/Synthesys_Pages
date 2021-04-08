@@ -1,12 +1,13 @@
 body.theme-light {
-
+  /*filter: invert(1);*/
   --white-inverted: #000;
   --gray-inverted: #0a0a0a;
   --block-shadow: 0 1px 5px #111;
   --blue: hsl(196, 74%, 50%);
   --blue-inverted: hsl(16, 74%, 50%);
 }
-body.theme-light > div {
+
+body.theme-light>div {
   filter: invert(1);
 }
 
@@ -59,6 +60,7 @@ body.theme-light .message .message-block .input-field textarea {
   box-shadow: 0px 2px 4px hsla(0, 0%, 100%, .1);
   filter: invert(1);
   background-color: white;
+  color: #000;
 }
 
 body.theme-light .create-message .create {
@@ -104,6 +106,7 @@ body.theme-light #gdpr-cookie-message button,
 body.theme-light .synonames .form-block button,
 body.theme-light .synonames header h4,
 body.theme-light .invert_this,
+body.theme-light #upload-demo canvas,
 body.theme-light .btn-info {
   filter: invert(1);
 }
@@ -408,7 +411,6 @@ body.theme-light .modal-dialog .lang-list .sampleAudioPlay {
 }
 
 body.theme-light .actor-preview-popup .modal-footer .btn {
-  filter: inherit;
   color: #555;
   font-weight: 500;
 }
@@ -420,6 +422,9 @@ body.theme-light .actor-preview-popup .modal-footer .btn.cancel {
 body.theme-light .actor-preview-popup .modal-footer .btn.ghost:not(.cancel):hover {
   --color: 200deg 73% 47%;
   filter: drop-shadow(0px 0px 7px hsla(var(--color) / .5)) invert(1);
+}
+body.theme-light .modal-backdrop.show {
+  z-index: -1;
 }
 /* Modal Styles end */
 
@@ -473,4 +478,9 @@ body.theme-light :is(.dropdown-menu > li > a:hover, .dropdown-menu > .dropdown-i
 body.theme-light .create-choose .item .item-body p:not(.name) {
   font-weight: 400;
 }
+
 /* Menu Dropdown end */
+
+/*body.theme-light{
+    height:auto !important;
+}*/
