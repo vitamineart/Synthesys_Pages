@@ -136,9 +136,22 @@
 
 
     <script>
-        const dropdownToggler = document.querySelector('.dropdown-toggle')
-        const dropdownMenuToggle = () => dropdownToggler.closest('.dropdown').querySelector('.dropdown-menu').classList.toggle('show');
-        dropdownToggler.addEventListener('click', dropdownMenuToggle);
+        const dropdownToggler = document.querySelector('.dropdown-toggle');
+        const dropdown = document.querySelector('.dropdown-menu');
+
+        dropdownToggler.addEventListener('click', function () {
+            dropdown.classList.toggle('show');
+            setTimeout(() => {
+                document.addEventListener('click', function(e){
+                    if(!e.target.matches('.dropdown-toggle') && !e.target.matches('.dropdown-menu')) {
+                        dropdown.classList.remove('show');
+                    }
+                })
+            }, 500);
+        })
+
+
+
     </script>
 </body>
 </html>

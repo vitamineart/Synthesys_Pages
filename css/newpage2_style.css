@@ -119,6 +119,9 @@ button {
 
     transition: .2s ease-out;
 }
+.btn-share span {
+    pointer-events: none;
+}
 .btn-share:hover {
     background-color: #000;
 }
