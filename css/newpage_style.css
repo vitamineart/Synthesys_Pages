@@ -90,7 +90,7 @@
 .video-options-list li a {
     display: inline-flex;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--c-bluegray);
 }
