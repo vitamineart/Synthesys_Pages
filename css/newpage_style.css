@@ -105,11 +105,12 @@
     background-color: #3F3E3E;
     border-radius: 12px;
     min-height: 470px;
+    overflow: hidden;
 }
 
 .video .video-img:before,
 .video .video-img:after {
-    content: '';
+    /* content: ''; */
     width: 10px;
     height: 10px;
     border-radius: 50%;
