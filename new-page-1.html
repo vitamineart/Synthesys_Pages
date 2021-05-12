@@ -48832,95 +48832,10 @@ body.theme-light .create-choose .item .item-body p:not(.name) {
     }
 </style>
 
-<style>
-  .share-btn {
-    border-radius: 50%;
-    width: 38px;
-    height: 38px;
-    border: 1px solid var(--c-blue-accent);
-    line-height: 42px;
-    text-align: center;
-  }
-  .shareable-link {
-    background-color: var(--c-blue-accent);
-    border-radius: 30px;
-    height: 38px;
-    padding: 12px 25px;
-  }
-  .grid {
-    display: grid;
-  }
-  .grid.grid-2-col {
-    grid-template-columns: .6fr .4fr;
-  }
-  .main-layout-grid {
-    margin-top: 2px;
-    padding-top: 30px;
-  }
-  .main-layout-grid .left-column {
-    background-color: #1C1C1C;
-    padding: 20px;
-  }
-  .main-layout-grid .right-column {
-    padding: 20px;
-    border-top: 2px solid #1C1C1C;
-  }
-  .video-options {
-    background-color: #2C2B2B;
-    padding: 20px;
-    border-radius: 5px;
-    font-size: 12px;
-  }
-  .video-options a {
-    color: var(--c-blue-accent);
-  }
-  .video-options header {
-    font-weight: 600;
-    font-size: 14px;
-    color: #fff;
-  }
-  .video-options-list {
-    padding: 0;
-    margin: 20px 0 20px 0;
-  }
-  .video-options-list li {}
-  .video-options-list li a{
-    display: inline-flex;
-    align-items:center;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--c-bluegray);
-  }
-  .video-options-list li a svg {
-    margin-right: 10px;
-    text-align:center;
-    width: 15px;
-  }
 
-  .video {
-    background-color: #3F3E3E;
-    border-radius: 12px;
-    min-height: 470px;
-  }
-  .video .video-img:before,
-  .video .video-img:after{
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #2C2B2B;
-    position: absolute;
-    top: 50%;
-   }
-   .video .video-img:before {
-     left: 17%;
-   }
-   .video .video-img:after {
-     right: 17%;
-   }
-</style>
 <div class="contentpanel">
-    <!-- begin :: content goes here... -->
+  <!-- begin :: content goes here... -->
+  <link rel="stylesheet" href="css/newpage_style.css" >
 
 
   <div class="d-flex align-items-center">
@@ -48936,11 +48851,34 @@ body.theme-light .create-choose .item .item-body p:not(.name) {
       <span>copy shareable link</span>
     </a>
 
-    <a href="#" class="share-btn ml-4">
-      <svg width="18" height="17" viewBox="0 0 18 17" fill="none">
-        <path d="M1 10V14C1 14.5304 1.21071 15.0391 1.58579 15.4142C1.96086 15.7893 2.46957 16 3 16H15C15.5304 16 16.0391 15.7893 16.4142 15.4142C16.7893 15.0391 17 14.5304 17 14V10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M13 5L9 1L5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M9 1V12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
+    <div class="ml-3 dropdown">
+      <a href="#" class="share-btn d-inline-block dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="shareBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <svg width="18" height="17" viewBox="0 0 18 17" fill="none">
+          <path d="M1 10V14C1 14.5304 1.21071 15.0391 1.58579 15.4142C1.96086 15.7893 2.46957 16 3 16H15C15.5304 16 16.0391 15.7893 16.4142 15.4142C16.7893 15.0391 17 14.5304 17 14V10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M13 5L9 1L5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M9 1V12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="dropdown-menu show">
+        <a class="dropdown-item d-inline-flex align-items-center justify-content-between" href="#">
+          <span>Facebook</span>
+          <svg width="9" height="17" viewBox="0 0 9 17" fill="none"> <path d="M5.84672 17V9.25811H8.51221L8.90842 6.22692H5.84672V4.29617C5.84672 3.42148 6.09544 2.8226 7.37661 2.8226H9V0.120123C8.21013 0.0371794 7.41618 -0.00286969 6.62179 0.000159793C4.26575 0.000159793 2.64814 1.40949 2.64814 3.99673V6.22125H0V9.25245H2.65392V17H5.84672Z" fill="#6A768E"/> </svg>
+        </a>
+        <a class="dropdown-item d-inline-flex align-items-center justify-content-between" href="#">
+          <span>Twitter</span>
+          <svg width="18" height="14" viewBox="0 0 18 14" fill="none">
+            <path d="M18 1.66303C17.3381 1.9364 16.6177 2.13314 15.8757 2.20977C16.6461 1.77162 17.223 1.07942 17.4981 0.263026C16.7753 0.674719 15.9834 0.963406 15.1576 1.11628C14.8124 0.763021 14.395 0.4816 13.9312 0.28955C13.4675 0.0975012 12.9675 -0.00105991 12.4622 8.5955e-06C10.418 8.5955e-06 8.77395 1.5864 8.77395 3.53314C8.77395 3.80651 8.80856 4.07989 8.8648 4.34291C5.80387 4.18965 3.07391 2.78965 1.25898 0.646162C0.928285 1.18693 0.754987 1.80266 0.75712 2.4293C0.75712 3.65533 1.40824 4.7364 2.40115 5.37219C1.81602 5.35013 1.24458 5.19616 0.733325 4.92279V4.96628C0.733325 6.68314 2.00096 8.10592 3.69042 8.43314C3.37321 8.51202 3.04688 8.55238 2.71914 8.55326C2.47903 8.55326 2.25189 8.53048 2.02259 8.49941C2.48984 9.89941 3.8505 10.9163 5.47074 10.9494C4.2031 11.9 2.61531 12.4592 0.891239 12.4592C0.581901 12.4592 0.296359 12.4488 0 12.4157C1.63538 13.4201 3.57577 14 5.66542 14C12.4492 14 16.1613 8.61953 16.1613 3.94941C16.1613 3.79616 16.1613 3.64291 16.1505 3.48965C16.8686 2.9864 17.4981 2.36302 18 1.66303Z" fill="#6A768E"/>
+          </svg>
+        </a>
+        <a class="dropdown-item d-inline-flex align-items-center justify-content-between" href="#">
+          <span>Linkedin</span>
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3.63213 15V4.87953H0.202355V15H3.63213ZM1.91768 3.49692C3.11371 3.49692 3.85817 2.71978 3.85817 1.74862C3.83589 0.755564 3.11375 0 1.94038 0C0.767193 0 0 0.755579 0 1.74862C0 2.71983 0.744282 3.49692 1.89529 3.49692H1.91758H1.91768ZM5.53049 15H8.96027V9.34823C8.96027 9.04576 8.98255 8.7436 9.07312 8.52737C9.32106 7.92304 9.8854 7.29712 10.8328 7.29712C12.0739 7.29712 12.5704 8.2252 12.5704 9.5857V14.9999H16V9.19694C16 6.08833 14.3079 4.64193 12.0513 4.64193C10.2011 4.64193 9.38876 5.65625 8.93745 6.34711H8.96034V4.87932H5.53057C5.57558 5.82896 5.53057 14.9998 5.53057 14.9998L5.53049 15Z" fill="#6A768E"/> </svg>
+        </a>
+        <a class="dropdown-item d-inline-flex align-items-center justify-content-between" href="#">
+          <span>Email</span>
+          <svg width="16" height="14" viewBox="0 0 16 14" fill="none"><path d="M2.66667 0C1.95942 0 1.28115 0.280951 0.781048 0.781048C0.280951 1.28115 0 1.95942 0 2.66667V2.93467L8 7.24267L16 2.936V2.66667C16 1.95942 15.719 1.28115 15.219 0.781048C14.7189 0.280951 14.0406 0 13.3333 0H2.66667Z" fill="#6A768E"/> <path d="M16 4.44928L8.316 8.58661C8.21888 8.6389 8.1103 8.66626 8 8.66626C7.8897 8.66626 7.78112 8.6389 7.684 8.58661L0 4.44928V10.6666C0 11.3739 0.280951 12.0521 0.781048 12.5522C1.28115 13.0523 1.95942 13.3333 2.66667 13.3333H13.3333C14.0406 13.3333 14.7189 13.0523 15.219 12.5522C15.719 12.0521 16 11.3739 16 10.6666V4.44928Z" fill="#6A768E"/></svg>
+        </a>
+      </div>
+    </div>
+
   </div>
 
 

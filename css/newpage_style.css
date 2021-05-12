@@ -1,0 +1,131 @@
+.share-btn {
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--c-blue-accent);
+    line-height: 42px;
+    text-align: center;
+}
+
+.shareable-link {
+    background-color: var(--c-blue-accent);
+    border-radius: 30px;
+    height: 38px;
+    padding: 12px 25px;
+}
+.share-btn  ~ .dropdown-menu {
+    left: auto;
+    right: -10px;
+    transform: translateY(20px);
+}
+
+.share-btn ~ .dropdown-menu::after {
+    content: '';
+    display: block !important;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    top: -10px;
+    right: 20px;
+}
+.share-btn~.dropdown-menu .dropdown-item {
+    font-weight: 500;
+    font-size: 12px;
+}
+.share-btn~.dropdown-menu .dropdown-item svg {
+    width: 20px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid.grid-2-col {
+    grid-template-columns: .6fr .4fr;
+}
+
+.main-layout-grid {
+    margin-top: 2px;
+    padding-top: 30px;
+}
+
+.main-layout-grid .left-column {
+    background-color: #1C1C1C;
+    padding: 20px;
+}
+
+.main-layout-grid .right-column {
+    padding: 20px;
+    border-top: 2px solid #1C1C1C;
+}
+
+.video-options {
+    background-color: #2C2B2B;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.video-options a {
+    color: var(--c-blue-accent);
+}
+
+.video-options header {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+
+.video-options-list {
+    padding: 0;
+    margin: 20px 0 20px 0;
+}
+
+.video-options-list li {}
+
+.video-options-list li a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--c-bluegray);
+}
+
+.video-options-list li a svg {
+    margin-right: 10px;
+    text-align: center;
+    width: 15px;
+}
+
+.video {
+    background-color: #3F3E3E;
+    border-radius: 12px;
+    min-height: 470px;
+}
+
+.video .video-img:before,
+.video .video-img:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2C2B2B;
+    position: absolute;
+    top: 50%;
+}
+
+.video .video-img:before {
+    left: 17%;
+}
+
+.video .video-img:after {
+    right: 17%;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
