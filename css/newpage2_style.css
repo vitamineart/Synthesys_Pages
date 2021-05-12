@@ -24,6 +24,9 @@ body {
 .d-flex {
     display: flex;
 }
+.d-inline-flex {
+    display: inline-flex;
+}
 
 .align-items-center {
     align-items: center;
@@ -92,9 +95,14 @@ body {
 h2 {
     font-size: 20px;
     font-weight: 600;
+    color: #fff;
 }
 
-.btn {
+.dropdown {
+    position: relative;
+}
+
+button {
     cursor: pointer;
 }
 .btn-share {
@@ -108,6 +116,11 @@ h2 {
     padding: 10px 20px;
     display: inline-flex;
     align-items: center;
+
+    transition: .2s ease-out;
+}
+.btn-share:hover {
+    background-color: #000;
 }
 .btn-share svg {
     margin-right: 11px;
@@ -130,4 +143,37 @@ h2 {
 }
 video {
     border-radius: 12px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    display: none;
+    z-index: 1000;
+}
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu .dropdown-item {
+    width: 100%;
+    line-height: 45px;
+    color: #000;
+    text-decoration: none;
+    padding: 0 20px;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+.dropdown-menu .dropdown-item svg {
+    width: 18px;
+    text-align: center;
 }
