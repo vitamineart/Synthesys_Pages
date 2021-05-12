@@ -1,3 +1,133 @@
+:root {
+    --c-bluegray: hsla(220, 15%, 49%, 1);
+    --c-blue-accent: hsla(196, 74%, 50%, 1);
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+}
 body {
-    font-family: 'Montserrat', sans-serif;
+    background: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+
+}
+
+.container {
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.ml-auto {margin-left: auto;}
+.mr-auto {margin-right: auto;}
+.mt-auto {margin-top: auto;}
+.mb-auto {margin-bottom: auto;}
+
+
+.header {
+    padding: 20px;
+}
+.header .logo {
+    margin-right: 60px;
+    position: relative;
+    top: 2px;
+}
+.main-menu {
+    display: flex;
+    align-items: center;
+}
+.main-menu-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 45px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.main-menu-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--c-blue-accent);
+    opacity: 0;
+    transform: translateY(-2px);
+    transition: .2s ease-out;
+}
+.main-menu-link.active:after {
+    transform: none;
+    opacity: 1;
+}
+.main-menu-link svg {
+    margin-right: 10px;
+}
+
+
+.title-section {
+    padding: 30px;
+    color: #fff;
+    background-color: #212121;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn {
+    cursor: pointer;
+}
+.btn-share {
+    border-radius: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid var(--c-blue-accent);
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+}
+.btn-share svg {
+    margin-right: 11px;
+}
+
+
+
+.content {
+    background-color: #1C1C1C;
+    padding: 30px 0;
+}
+
+
+.video {
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video {
+    border-radius: 12px;
 }
