@@ -91,6 +91,7 @@
     display: inline-flex;
     align-items: center;
     font-size: 14px;
+    line-height: 2;
     font-weight: 500;
     color: var(--c-bluegray);
 }
